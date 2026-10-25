@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Formulario de inscripción al evento Parche Dev 2026.">
     <title>Inscripción | Parche Dev 2026</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
     <body>
         <a href="#contenido">Saltar al contenido</a>
@@ -12,6 +13,8 @@
         <header>
             <a href="index.html" aria-current="page">Parche Dev 2026</a>
             <h1>Inscripción</h1>
+            <p>La entrada es gratuita y los cupos son limitados. Completa el formulario para reservar el tuyo.</p>
+            <p><strong>Los campos marcados con * son obligatorios.</strong></p>
                 <nav>
                     <p>Menú de navegación</p>
                     <ul>
@@ -23,11 +26,92 @@
                     </ul>
                 </nav>
         </header>
+    <form action="gracias.html" method="GET">
         <main id="contenido">
+            <fieldset>
+                <legend><strong>Tus datos<strong></legend>
+                    <label for="nombre"><strong>Nombre completo</strong> *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+
+                    <label for="correo"><strong>Correo electrónico</strong></strong> *</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <br>
+
+                    <label for="celular"><strong>Celular</strong>(10 dígitos, empieza por 3)</label>
+                    <input type="tel" id="celular" name="celular" pattern="3\d{9}" title="Debe empezar con 3 y tener 10 dígitos">
+                    <br>
+                    
+                    <label for="ciudad"><strong>Ciudad</strong></label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="">Selecciona una ciudad</option>
+                        <option value="medellin">Medellín</option>
+                        <option value="bello">Bello</option>
+                        <option value="itagui">Itagüí</option>
+                        <option value="envigado">Envigado</option>
+                        <option value="sabaneta">Sabaneta</option>
+                        <option value="la_estrella">La Estrella</option>
+                        <option value="caldas">Caldas</option>
+                        <option value="copacabana">Copacabana</option>
+                        <option value="girardota">Girardota</option>
+                        <option value="barbosa">Barbosa</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                
+            </fieldset>
+
+        <fieldset>
+            <legend>¿En qué momento estás? </legend>
+            <label for ></label>
+            <input type="radio" id="empezando" name="momento" value="empezando" required> Estoy empezando a programar<br>
+            <input type="radio" id="ya_programo" name="momento" value="ya_programo"> Ya programo, pero no trabajo en tecnología<br>
+            <input type="radio" id="trabajo" name="momento" value="trabajo"> Trabajo en tecnología<br>
+
+        </fieldset>
+        <fieldset>
+                <legend>¿Qué temas te interesan?</legend>
+            <label for="temas"> </label>
+            <input type="checkbox" id="desarrollo_web" name="temas" value="desarrollo_web"> Desarrollo web<br>
+            <input type="checkbox" id="datos_sql" name="temas" value="datos_sql"> Datos y SQL<br>
+            <input type="checkbox" id="accesibilidad" name="temas" value="accesibilidad"> Accesibilidad<br>
+            <input type="checkbox" id="python" name="temas" value="python"> Python<br>
+            <input type="checkbox" id="despliegue" name="temas" value="despliegue"> Despliegue en la nube<br>
+        </fieldset>
+        <fieldset>  
+            <legend>Agenda </legend>
+            <label for="taller">Quiero inscribirme al taller:"Tu primer bot con Python"(30 cupos, trae tu computador)</label>
+            <label for="talla"><strong>Talla de camiseta</strong></label>
+            <select id="talla" name="talla">
+                <option value="">Selecciona una talla</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+        </fieldset>
+            </select>
+            <br>
+            <br>
+            <label for="expectativas">
+                <strong>¿Qué esperas del evento?</strong> (máximo 300 caracteres)</label>
+                <br>
+            </label>
+            <textarea id="expectativas" name="expectativas" maxlength="300"></textarea>
+            <br>
+            <label for="codigo_conducta">
+                <input type="checkbox" id="codigo_conducta" name="codigo_conducta" required>
+                He leído y acepto el <a href="conducta.html">código de conducta</a> del evento *
+            </label>
+            <br>
+            <br>
+            <button type= "submit" href="gracias.html">Reservar mi cupo</button>
 
 
+        
         </main>
-<footer>
+    </form>
+<footer> 
     <p>¿Preguntas? Escríbenos a: <address><a href="mailto:hola@parchedev.example"> hola@parchedev.example</a></address></p>
     <p>Parche Dev 2026 · Medellín, Colombia</p>
     <p>Parche Dev es un evento ficticio creado como reto de formación.</p>
