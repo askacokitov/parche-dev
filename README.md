@@ -48,6 +48,20 @@ Hacerlo como una lista con viñetas donde el orden no importa (teniendo en cuent
 - Los formularios. Esto me sorprendió un poco más porque no esperaba que fuese tan sencillo y práctico. Solo hay que saber qué poner en cada <label> para ajustarlo según nuestras necesidades. 
 - Los links enlazados entre páginas. Lo admito, juraba que todo esto del HTML era más complejo debido a que solo he trabajado con Java. Pero el tema de links enlazados entre páginas es quizás la mejor idea para llevar de una página a otra sin salir de tu proyecto (a menos que sea un link de otra página externa). Solo es saber dónde está ubicado cada carpeta o archivo y usar los comandos adecuados.
 
+
+## Auditorías de Lighthouse (Móvil)
+
+### Inicio
+![Lighthouse Inicio]
+![alt text](image.png)
+
+### Agenda
+![Lighthouse Agenda]
+![alt text](image-1.png)
+
+### Inscripción
+![Lighthouse Inscripcion]
+![alt text](image-2.png)
 ## Hecho por
 
 Laura Daniela Trujillo Martínez · [GitHub](https://github.com/askacokitov)
